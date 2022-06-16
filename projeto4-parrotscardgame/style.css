@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: rgb(213, 239, 174);
+}
+
+
+.titulo{
+    margin-top: 20px;
+    color: #75B79E;
+    font-size: 56px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
