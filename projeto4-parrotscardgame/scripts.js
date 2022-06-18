@@ -52,7 +52,7 @@ const nomes = ["unicorn", "fiesta", "metal", "bobross", "explody", "revertit", "
     for (let i=0; i < number; i++){
          document.querySelector(".espaco-cartas").innerHTML += `
          <div class="carta">
-             <div class="front" onclick="apagarFront()">
+             <div class="front" onclick="apagarFront(this)">
              <img src="Gifs/front.png" alt="" />
              </div>         
              <div class="back">
@@ -62,11 +62,10 @@ const nomes = ["unicorn", "fiesta", "metal", "bobross", "explody", "revertit", "
          ;
     }  
 
-
-
-function apagarFront(){
-    let apagando = document.querySelector(".front");
-    apagando.classList.toggle("virar");
-    console.log(apagando)
+function apagarFront(front){
+    const cartaClicada = document.querySelector("virar");
+    if (cartaClicada !== null){
+        cartaClicada.classList.remove("virar");
+    }
+        front.classList.toggle("virar");
 }
-apagarFront()

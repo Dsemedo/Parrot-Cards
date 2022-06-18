@@ -78,5 +78,7 @@ body{
 }
 
 .virar{
+    transition: all linear 800ms;
     opacity: 0;
+    transform: rotateY(180deg);
 }
