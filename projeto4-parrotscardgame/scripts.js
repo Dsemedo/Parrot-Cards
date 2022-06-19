@@ -118,7 +118,7 @@ console.log(resetarCartas());
 
 function finalizarJogo(){
     if(cartaCerta == number){
-        setTimeout(alert, 800, `Voce ganhou em ${jogadas/2} jogadas!!`)
+        setTimeout(alert, 800, `Voce ganhou em ${jogadas} jogadas!!`)
     }
 }
 
