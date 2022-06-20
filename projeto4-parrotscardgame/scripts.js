@@ -121,5 +121,3 @@ function finalizarJogo(){
         setTimeout(alert, 800, `Voce ganhou em ${jogadas} jogadas!!`)
     }
 }
-
-console.log(finalizarJogo());
